@@ -1,7 +1,7 @@
 {
   "name": "filecloud",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a web application made with MERN stack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
