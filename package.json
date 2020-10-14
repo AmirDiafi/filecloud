@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heruko-postbuild": "cd client npm install",
+    "heroku-postbuild": "cd client npm install && npm run build",
     "client-build": "npm run build --prefix client",
     "start": "node index.js",
     "server": "nodemon index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmirDiafi/informational-weather-app-with-react-js.git"
+    "url": "git+https://github.com/AmirDiafi/filecloud.git"
   },
   "author": "Amir Diafi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AmirDiafi/informational-weather-app-with-react-js/issues"
+    "url": "https://github.com/AmirDiafi/filecloud/issues"
   },
-  "homepage": "https://github.com/AmirDiafi/informational-weather-app-with-react-js#readme",
+  "homepage": "https://github.com/AmirDiafi/filecloud#readme",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
