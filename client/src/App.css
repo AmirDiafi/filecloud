@@ -1,0 +1,53 @@
+body{
+  padding: 0 0 120px 0;
+  min-height: 100vh;
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  text-align: center
+}
+
+* {
+  user-select: none
+}
+
+button {
+    outline: none !important
+}
+
+.hidden {
+  display: none;
+}
+
+.isButton {
+    position: relative;
+    overflow: hidden
+}
+
+.isButton span.ripple {
+    background: rgba(196, 197, 255, 0.596);
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(0);
+    animation: ripple .5s ease-in-out;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(1);
+    }
+}
+
+.container {
+  width: 90% !important
+}
+
+img.wait {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 50px auto
+}
+

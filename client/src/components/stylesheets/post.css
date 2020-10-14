@@ -1,0 +1,167 @@
+.the-post .post{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+.post {
+    color: #333;
+    border-radius: 5px;
+    width:80%;
+    margin: 15px auto
+}
+
+.post > div {
+    padding: 10px
+}
+
+.post .body {
+    display: flex;
+    align-items: center;
+    margin:0 0 10px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.post .body img {
+    width: 50px;
+    height: 50px;
+    border-right-style: 200%;
+    margin-right: 7px;
+}
+
+.post .body p.desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin:0;
+}
+
+.post .tags{
+    text-align: left
+}
+.post .tags > div {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.post .info {
+    margin:0;
+    color: #FFF;
+    display: flex;
+    position:relative;
+    font-size: 17px !important
+}
+
+.post .info img {
+    width:25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.post .info div.publisher {
+    color: #000;
+    font-size: 12px !important
+}
+
+.post .info div.publisher > span {
+    font-size: inherit
+}
+
+.post .info div.publisher span.name {
+    font-weight: bold
+}
+
+.post .info div.publisher span.date {
+    color: #555;
+    border-left: 1px solid #555;
+    padding-left: 5px;
+    margin-left: 5px
+}
+
+.post ul.icons {
+    display: flex;
+    justify-items: center;
+    position: absolute;
+    right: 0
+}
+
+.post ul.icons li {
+    width: 30px;
+    height: 30px;
+    color: #555;
+    cursor: pointer;
+    transition: all .2s ease;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px
+}
+
+.post ul.icons li * {
+    margin: 0
+}
+
+.post ul.icons li a .MuiCheckbox-colorSecondary.Mui-checked {
+    color: #3f51b5
+}
+
+.post ul.icons li .MuiTypography-body1 {
+    display:none
+}
+
+.post ul.icons li.liked {
+    background: #2196F3;
+    color:#FFF
+}
+
+.post ul.icons .options-share {
+    position:absolute;
+    right:100px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(251 251 251 / 70%);
+    border: 1px solid #2196F3;
+}
+
+.post ul.icons .options-share button {
+    padding: 5px;
+    font-size: 15px;
+    color: #FFF;
+    background: #2196F3;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.post ul.icons .hide {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .post {
+	width: 95%;
+    }
+    .post .info {
+    	font-size: 14px !important
+    }
+
+.post ul.icons li {
+    width: 22px;
+    height: 22px
+}
+
+.post ul.icons li button span svg {
+    font-size: 1.1rem
+}
+
+}
